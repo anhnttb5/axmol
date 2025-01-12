@@ -197,6 +197,7 @@ bool MeshRenderer::loadFromCache(std::string_view path)
     auto meshdata = MeshRendererCache::getInstance()->getMeshRenderData(path);
     if (meshdata)
     {
+
         for (auto&& it : meshdata->meshVertexDatas)
         {
             _meshVertexDatas.pushBack(it);
@@ -220,9 +221,14 @@ bool MeshRenderer::loadFromCache(std::string_view path)
                 createAttachMeshRendererNode(it, *(meshdata->materialdatas));
             }
         }
+        if (_meshes.size() > meshdata->programStates.size()){
+            return false;
+        }
+
 
         for (ssize_t i = 0, size = _meshes.size(); i < size; ++i)
         {
+
             // cloning is needed in order to have one state per mesh
             auto glstate = meshdata->programStates.at(i);
             _meshes.at(i)->setProgramState(glstate->clone());
@@ -293,7 +299,47 @@ bool MeshRenderer::init()
     }
     return false;
 }
+bool MeshRenderer::initWithData(std::string_view path,MeshDatas* meshdatas,NodeDatas *nodeDatas,MaterialDatas *materialdatas) {
+    _aabbDirty = true;
+    _meshes.clear();
+    _meshVertexDatas.clear();
+    AX_SAFE_RELEASE_NULL(_skeleton);
+    removeAllAttachNode();
 
+
+    if (loadFromCache(path))
+        return true;
+
+    if (meshdatas == nullptr )
+        return false;
+
+    if (initFrom(*nodeDatas, *meshdatas, *materialdatas)) {
+        // add to cache
+        auto data = new MeshRendererCache::MeshRenderData();
+        data->materialdatas = materialdatas;
+        data->nodedatas = nodeDatas;
+        data->meshVertexDatas = _meshVertexDatas;
+        for (const auto mesh: _meshes) {
+            data->programStates.pushBack(mesh->getProgramState());
+        }
+
+        MeshRendererCache::getInstance()->addMeshRenderData(path, data);
+        AX_SAFE_DELETE(meshdatas);
+        _contentSize = getBoundingBox().size;
+        return true;
+    }
+
+    AX_SAFE_DELETE(meshdatas);
+    AX_SAFE_DELETE(materialdatas);
+    AX_SAFE_DELETE(nodeDatas);
+    return false;
+}
+
+bool MeshRenderer::initWithFileCache(std::string_view path){
+     if (loadFromCache(path))
+        return true;
+     return false;
+}
 bool MeshRenderer::initWithFile(std::string_view path)
 {
     _aabbDirty = true;
@@ -302,8 +348,8 @@ bool MeshRenderer::initWithFile(std::string_view path)
     AX_SAFE_RELEASE_NULL(_skeleton);
     removeAllAttachNode();
 
-    if (loadFromCache(path))
-        return true;
+   // if (loadFromCache(path))
+    //    return true;
 
     MeshDatas* meshdatas         = new MeshDatas();
     MaterialDatas* materialdatas = new MaterialDatas();
@@ -314,6 +360,7 @@ bool MeshRenderer::initWithFile(std::string_view path)
         {
             // add to cache
             auto data             = new MeshRendererCache::MeshRenderData();
+            _nodeDatas = nodeDatas;
             data->materialdatas   = materialdatas;
             data->nodedatas       = nodeDatas;
             data->meshVertexDatas = _meshVertexDatas;
@@ -511,6 +558,9 @@ void MeshRenderer::genMaterial(bool useLight)
 
     for (auto&& mesh : _meshes)
     {
+        auto meshIndexData = mesh->getMeshIndexData();
+        auto meshVertexData = meshIndexData->getMeshVertexData();
+
         auto material = materials[mesh->getMeshIndexData()->getMeshVertexData()];
         material->setTransparent(_transparentMaterialHint);
         // keep original state block if exist
@@ -761,7 +811,14 @@ void MeshRenderer::setTexture(std::string_view texFile)
     auto tex = _director->getTextureCache()->addImage(texFile);
     setTexture(tex);
 }
-
+void MeshRenderer::setTexture(std::string name,Texture2D* texture){
+    for (auto&& mesh : _meshes)
+    {
+        if (mesh->getMeshIndexData()->getId() == name){
+            mesh->setTexture(texture);
+        }
+    }
+}
 void MeshRenderer::setTexture(Texture2D* texture)
 {
     for (auto&& mesh : _meshes)
@@ -855,9 +912,14 @@ void MeshRenderer::visit(ax::Renderer* renderer, const ax::Mat4& parentTransform
 
     _director->popMatrix(MATRIX_STACK_TYPE::MATRIX_STACK_MODELVIEW);
 }
+void MeshRenderer::stopDraw(bool _stop){
+    _stopDraw = _stop;
+}
 
 void MeshRenderer::draw(Renderer* renderer, const Mat4& transform, uint32_t flags)
 {
+
+    //if (_stopDraw) return;
 #if AX_USE_CULLING
     // TODO new-renderer: interface isVisibleInFrustum removal
     //  camera clipping

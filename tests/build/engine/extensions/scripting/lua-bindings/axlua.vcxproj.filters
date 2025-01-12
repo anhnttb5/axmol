@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\LuaBridge.cpp">
+      <Filter>Source Files\manual</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\LuaEngine.cpp">
+      <Filter>Source Files\manual</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\LuaStack.cpp">
+      <Filter>Source Files\manual</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\LuaValue.cpp">
+      <Filter>Source Files\manual</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\AxluaLoader.cpp">
+      <Filter>Source Files\manual</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\LuaBasicConversions.cpp">
+      <Filter>Source Files\manual</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\lua_module_register.cpp">
+      <Filter>Source Files\manual</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\tolua_fix.cpp">
+      <Filter>Source Files\manual</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\ComponentLua.cpp">
+      <Filter>Source Files\manual</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\base\LuaScriptHandlerMgr.cpp">
+      <Filter>Source Files\manual\base</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\base\axlua_base_manual.cpp">
+      <Filter>Source Files\manual\base</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\physics\axlua_physics_manual.cpp">
+      <Filter>Source Files\manual\physics</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\3d\axlua_3d_manual.cpp">
+      <Filter>Source Files\manual\3d</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\cocostudio\CustomGUIReader.cpp">
+      <Filter>Source Files\manual\cocostudio</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\cocostudio\axlua_cocostudio_manual.cpp">
+      <Filter>Source Files\manual\cocostudio</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\cocostudio\lua-cocostudio-conversions.cpp">
+      <Filter>Source Files\manual\cocostudio</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\cocostudio\axlua_csloader_manual.cpp">
+      <Filter>Source Files\manual\cocostudio</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\controller\axlua_controller_manual.cpp">
+      <Filter>Source Files\manual\controller</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\extension\axlua_extension_manual.cpp">
+      <Filter>Source Files\manual\extension</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\network\axlua_network_manual.cpp">
+      <Filter>Source Files\manual\network</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\network\lua_xml_http_request.cpp">
+      <Filter>Source Files\manual\network</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\network\lua_downloader.cpp">
+      <Filter>Source Files\manual\network</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\network\lua_websocket.cpp">
+      <Filter>Source Files\manual\network</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\spine\axlua_spine_manual.cpp">
+      <Filter>Source Files\manual\spine</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\spine\LuaSkeletonAnimation.cpp">
+      <Filter>Source Files\manual\spine</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\ui\axlua_ui_manual.cpp">
+      <Filter>Source Files\manual\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\audioengine\axlua_audioengine_manual.cpp">
+      <Filter>Source Files\manual\audioengine</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\physics3d\axlua_physics3d_manual.cpp">
+      <Filter>Source Files\manual\physics3d</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\navmesh\axlua_navmesh_conversions.cpp">
+      <Filter>Source Files\manual\navmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\navmesh\axlua_navmesh_manual.cpp">
+      <Filter>Source Files\manual\navmesh</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\fairygui\axlua_fairygui_manual.cpp">
+      <Filter>Source Files\manual\fairygui</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\fairygui\axlua_fairygui_conversions.cpp">
+      <Filter>Source Files\manual\fairygui</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\ui\axlua_video_manual.cpp">
+      <Filter>Source Files\manual\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\auto\axlua_video_auto.cpp">
+      <Filter>Source Files\auto</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\ui\axlua_webview_manual.cpp">
+      <Filter>Source Files\manual\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\auto\axlua_webview_auto.cpp">
+      <Filter>Source Files\auto</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\auto\axlua_3d_auto.cpp">
+      <Filter>Source Files\auto</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\auto\axlua_base_auto.cpp">
+      <Filter>Source Files\auto</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\auto\axlua_controller_auto.cpp">
+      <Filter>Source Files\auto</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\auto\axlua_extension_auto.cpp">
+      <Filter>Source Files\auto</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\auto\axlua_physics_auto.cpp">
+      <Filter>Source Files\auto</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\auto\axlua_spine_auto.cpp">
+      <Filter>Source Files\auto</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\auto\axlua_studio_auto.cpp">
+      <Filter>Source Files\auto</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\auto\axlua_csloader_auto.cpp">
+      <Filter>Source Files\auto</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\auto\axlua_ui_auto.cpp">
+      <Filter>Source Files\auto</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\auto\axlua_audioengine_auto.cpp">
+      <Filter>Source Files\auto</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\auto\axlua_physics3d_auto.cpp">
+      <Filter>Source Files\auto</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\auto\axlua_navmesh_auto.cpp">
+      <Filter>Source Files\auto</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\auto\axlua_backend_auto.cpp">
+      <Filter>Source Files\auto</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\auto\axlua_fairygui_auto.cpp">
+      <Filter>Source Files\auto</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\bindings\lyasio.cpp">
+      <Filter>Source Files\..\..\..\3rdparty\yasio\yasio\bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\bindings\yasio_axlua.cpp">
+      <Filter>Source Files\..\..\..\3rdparty\yasio\yasio\bindings</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\ComponentLua.h">
+      <Filter>Source Files\manual</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\3d\axlua_3d_manual.h">
+      <Filter>Source Files\manual\3d</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\LuaStack.h">
+      <Filter>Source Files\manual</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\LuaEngine.h">
+      <Filter>Source Files\manual</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\lua_module_register.h">
+      <Filter>Source Files\manual</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\LuaBridge.h">
+      <Filter>Source Files\manual</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\extension\axlua_extension_manual.h">
+      <Filter>Source Files\manual\extension</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\LuaBasicConversions.h">
+      <Filter>Source Files\manual</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\spine\LuaSkeletonAnimation.h">
+      <Filter>Source Files\manual\spine</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\platform\ios\LuaObjcBridge.h">
+      <Filter>Source Files\manual\platform\ios</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\network\axlua_network_manual.h">
+      <Filter>Source Files\manual\network</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\network\lua_xml_http_request.h">
+      <Filter>Source Files\manual\network</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\network\lua_downloader.h">
+      <Filter>Source Files\manual\network</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\audioengine\axlua_audioengine_manual.h">
+      <Filter>Source Files\manual\audioengine</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\Lua-BindingsExport.h">
+      <Filter>Source Files\manual</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\tolua_fix.h">
+      <Filter>Source Files\manual</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\navmesh\axlua_navmesh_manual.h">
+      <Filter>Source Files\manual\navmesh</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\navmesh\axlua_navmesh_conversions.h">
+      <Filter>Source Files\manual\navmesh</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\base\LuaScriptHandlerMgr.h">
+      <Filter>Source Files\manual\base</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\base\axlua_base_manual.hpp">
+      <Filter>Source Files\manual\base</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\AxluaLoader.h">
+      <Filter>Source Files\manual</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\LuaValue.h">
+      <Filter>Source Files\manual</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\physics3d\axlua_physics3d_manual.h">
+      <Filter>Source Files\manual\physics3d</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\cocostudio\lua-cocostudio-conversions.h">
+      <Filter>Source Files\manual\cocostudio</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\cocostudio\CustomGUIReader.h">
+      <Filter>Source Files\manual\cocostudio</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\ui\axlua_ui_manual.hpp">
+      <Filter>Source Files\manual\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\controller\axlua_controller_manual.hpp">
+      <Filter>Source Files\manual\controller</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\fairygui\axlua_fairygui_manual.hpp">
+      <Filter>Source Files\manual\fairygui</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\fairygui\axlua_fairygui_conversions.h">
+      <Filter>Source Files\manual\fairygui</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\auto\axlua_video_auto.hpp">
+      <Filter>Source Files\auto</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\ui\axlua_video_manual.hpp">
+      <Filter>Source Files\manual\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\manual\ui\axlua_webview_manual.hpp">
+      <Filter>Source Files\manual\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\auto\axlua_webview_auto.hpp">
+      <Filter>Source Files\auto</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\auto\axlua_audioengine_auto.hpp">
+      <Filter>Source Files\auto</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\auto\axlua_3d_auto.hpp">
+      <Filter>Source Files\auto</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\auto\axlua_controller_auto.hpp">
+      <Filter>Source Files\auto</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\auto\axlua_spine_auto.hpp">
+      <Filter>Source Files\auto</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\auto\axlua_studio_auto.hpp">
+      <Filter>Source Files\auto</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\auto\axlua_base_auto.hpp">
+      <Filter>Source Files\auto</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\auto\axlua_navmesh_auto.hpp">
+      <Filter>Source Files\auto</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\auto\axlua_csloader_auto.hpp">
+      <Filter>Source Files\auto</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\auto\axlua_physics3d_auto.hpp">
+      <Filter>Source Files\auto</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\auto\axlua_ui_auto.hpp">
+      <Filter>Source Files\auto</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\auto\axlua_physics_auto.hpp">
+      <Filter>Source Files\auto</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\auto\axlua_extension_auto.hpp">
+      <Filter>Source Files\auto</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\auto\axlua_backend_auto.hpp">
+      <Filter>Source Files\auto</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\auto\axlua_fairygui_auto.hpp">
+      <Filter>Source Files\auto</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\DevCocos\axmol\extensions\scripting\lua-bindings\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{DE4B1930-799C-3B1F-B3DF-67CAF3A4DEF6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\..">
+      <UniqueIdentifier>{5729DCB3-7578-39DC-A833-95513C3FA286}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\..\..">
+      <UniqueIdentifier>{38F47EF1-9608-3D79-9BD2-7DD23455039C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\..\..\..">
+      <UniqueIdentifier>{4F7844D3-683A-380B-B9F3-2D3B80E1F4B7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\..\..\..\3rdparty">
+      <UniqueIdentifier>{16A3C5A9-0BB2-33B1-A50E-87D475E5FE41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\..\..\..\3rdparty\yasio">
+      <UniqueIdentifier>{75D92D70-04C5-3D31-989A-A98CE32277FB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\..\..\..\3rdparty\yasio\yasio">
+      <UniqueIdentifier>{6CC864D6-5AC1-38EA-8EED-BCB228203F64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\..\..\..\3rdparty\yasio\yasio\bindings">
+      <UniqueIdentifier>{3CC484AB-51A8-34D3-831D-71CA92C0B6D9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\auto">
+      <UniqueIdentifier>{622E4C01-DE71-350D-94D9-0702ED9C5543}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\manual">
+      <UniqueIdentifier>{64DBD74E-D215-38A6-BA30-C660168890C4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\manual\3d">
+      <UniqueIdentifier>{DA39B565-024E-3CE4-A9F1-4BB2ABC1335C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\manual\audioengine">
+      <UniqueIdentifier>{E93F27F9-3EF8-3981-9238-EBAED7F1B713}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\manual\base">
+      <UniqueIdentifier>{EDA83B32-4673-3EF8-9B5C-91860CFBE808}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\manual\cocostudio">
+      <UniqueIdentifier>{F0796632-F321-39E1-B844-E0B6C7081C48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\manual\controller">
+      <UniqueIdentifier>{CC081EAD-F39D-309D-988B-4B52D0819609}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\manual\extension">
+      <UniqueIdentifier>{E0E64F7A-4EFC-3D27-A6A4-84AF8781C7BB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\manual\fairygui">
+      <UniqueIdentifier>{99693FAE-03B1-3F72-B5AC-B4D24E7F989C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\manual\navmesh">
+      <UniqueIdentifier>{82FAB69C-6E63-3A68-B7E3-373D2A974A1A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\manual\network">
+      <UniqueIdentifier>{71ABB2EF-BEDC-3D61-9139-D05DCE157B8C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\manual\physics">
+      <UniqueIdentifier>{AFF7D1BC-99E7-3983-B4BD-AC6CF2A84177}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\manual\physics3d">
+      <UniqueIdentifier>{FE99B4A5-3633-3A6C-8FB6-6AA2E36DE884}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\manual\platform">
+      <UniqueIdentifier>{0A7DB2D1-6551-37FF-A437-BEC25A9624A5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\manual\platform\ios">
+      <UniqueIdentifier>{033F83F6-6E84-3B7D-8B87-2E93D3EEAD93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\manual\spine">
+      <UniqueIdentifier>{CA4586F3-242A-3AD0-BEF8-601AB1CCD1BA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\manual\ui">
+      <UniqueIdentifier>{42C230C1-F5B3-3170-810A-790C87B1FF0D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

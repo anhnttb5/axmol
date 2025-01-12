@@ -367,11 +367,22 @@ void Renderer::visitRenderQueue(RenderQueue& queue)
     //
     // Process Opaque Object
     //
+
     pushStateBlock();
     setDepthTest(true);  // enable depth test in 3D queue by default
     setDepthWrite(true);
     setCullMode(backend::CullMode::BACK);
     doVisitRenderQueue(queue.getSubQueue(RenderQueue::QUEUE_GROUP::OPAQUE_3D));
+
+
+
+
+
+
+    //
+    // Process Global-Z = 0 Queue
+    //
+    doVisitRenderQueue(queue.getSubQueue(RenderQueue::QUEUE_GROUP::GLOBALZ_ZERO));
 
     //
     // Process 3D Transparent object
@@ -379,12 +390,6 @@ void Renderer::visitRenderQueue(RenderQueue& queue)
     setDepthWrite(false);
     doVisitRenderQueue(queue.getSubQueue(RenderQueue::QUEUE_GROUP::TRANSPARENT_3D));
     popStateBlock();
-
-    //
-    // Process Global-Z = 0 Queue
-    //
-    doVisitRenderQueue(queue.getSubQueue(RenderQueue::QUEUE_GROUP::GLOBALZ_ZERO));
-
     //
     // Process Global-Z > 0 Queue
     //

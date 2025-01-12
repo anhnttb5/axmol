@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\io_service.cpp" />
+    <ClCompile Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\xxsocket.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\bindings\lua\lua.hpp">
+      <Filter>bindings\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\bindings\luajit\lua.hpp">
+      <Filter>bindings\luajit</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\bindings\lyasio.hpp">
+      <Filter>bindings</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\bindings\yasio_axlua.hpp">
+      <Filter>bindings</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\bindings\yasio_sol.hpp">
+      <Filter>bindings</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\buffer_alloc.hpp" />
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\byte_buffer.hpp" />
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\compiler\feature_test.hpp">
+      <Filter>compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\config.hpp" />
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\endian_portable.hpp" />
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\errc.hpp" />
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\fsutils.hpp" />
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\ibstream.hpp" />
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\impl\ares.hpp">
+      <Filter>impl</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\impl\char_traits.hpp">
+      <Filter>impl</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\impl\concurrent_queue.hpp">
+      <Filter>impl</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\impl\epoll_io_watcher.hpp">
+      <Filter>impl</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\impl\eventfd_select_interrupter.hpp">
+      <Filter>impl</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\impl\evport_io_watcher.hpp">
+      <Filter>impl</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\impl\fp16.hpp">
+      <Filter>impl</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\impl\ifaddrs.hpp">
+      <Filter>impl</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\impl\inet_ntop.hpp">
+      <Filter>impl</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\impl\kqueue_io_watcher.hpp">
+      <Filter>impl</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\impl\mbedtls.hpp">
+      <Filter>impl</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\impl\object_pool.hpp">
+      <Filter>impl</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\impl\openssl.hpp">
+      <Filter>impl</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\impl\pipe_select_interrupter.hpp">
+      <Filter>impl</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\impl\poll_io_watcher.hpp">
+      <Filter>impl</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\impl\select_interrupter.hpp">
+      <Filter>impl</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\impl\select_io_watcher.hpp">
+      <Filter>impl</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\impl\socket.hpp">
+      <Filter>impl</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\impl\socket_select_interrupter.hpp">
+      <Filter>impl</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\io_service.hpp" />
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\io_watcher.hpp" />
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\logging.hpp" />
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\memory.hpp" />
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\object_pool.hpp" />
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\object_pool_alloc.hpp" />
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\obstream.hpp" />
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\platform\yasio_jni.hpp">
+      <Filter>platform</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\platform\yasio_unreal.hpp">
+      <Filter>platform</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\pod_vector.hpp" />
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\ref_ptr.hpp" />
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\shared_mutex.hpp" />
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\singleton.hpp" />
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\split.hpp" />
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\ssl.hpp" />
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\strfmt.hpp" />
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\string.hpp" />
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\string_view.hpp" />
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\sz.hpp" />
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\thread_name.hpp" />
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\type_traits.hpp" />
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\utils.hpp" />
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\wtimer_hres.hpp" />
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\xxsocket.hpp" />
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\yasio.hpp" />
+    <ClInclude Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\yasio_fwd.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\DevCocos\axmol\3rdparty\yasio\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="E:\DevCocos\axmol\3rdparty\yasio\yasio\yasio.natvis" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="bindings">
+      <UniqueIdentifier>{0829D92B-7A77-3CDB-B519-6117E2C00608}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bindings\lua">
+      <UniqueIdentifier>{9BEB31BB-397F-3CB8-9C9D-D431C15EED9D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bindings\luajit">
+      <UniqueIdentifier>{4A087636-7E1F-3E45-886F-402FC5150AA6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="compiler">
+      <UniqueIdentifier>{D7D24747-8611-3612-8BEE-4AAEF70B05DD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="impl">
+      <UniqueIdentifier>{69D4D791-259C-376B-A179-F8F83322F8D6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platform">
+      <UniqueIdentifier>{55C0C17C-AF8D-3710-8E6E-DF1B4D2640BD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

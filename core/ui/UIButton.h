@@ -107,6 +107,13 @@ public:
      */
     void loadTextureNormal(std::string_view normal, TextureResType texType = TextureResType::LOCAL);
 
+    void loadTextureNormal(SpriteFrame* normalSpriteFrame);
+    void setupNormalTexture(bool textureLoaded);
+    void loadTexturePressed(SpriteFrame* pressedSpriteFrame);
+    void setupPressedTexture(bool textureLoaded);
+    void loadTextureDisabled(SpriteFrame* disabledSpriteFrame);
+    void setupDisabledTexture(bool textureLoaded);
+
     /**
      * Load selected state texture for button.
      *
@@ -329,12 +336,7 @@ protected:
     virtual void onPressStateChangedToDisabled() override;
     virtual void onSizeChanged() override;
 
-    void loadTextureNormal(SpriteFrame* normalSpriteFrame);
-    void setupNormalTexture(bool textureLoaded);
-    void loadTexturePressed(SpriteFrame* pressedSpriteFrame);
-    void setupPressedTexture(bool textureLoaded);
-    void loadTextureDisabled(SpriteFrame* disabledSpriteFrame);
-    void setupDisabledTexture(bool textureLoaded);
+
 
     void normalTextureScaleChangedWithSize();
     void pressedTextureScaleChangedWithSize();

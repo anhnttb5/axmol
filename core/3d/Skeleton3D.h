@@ -94,6 +94,9 @@ public:
      * @param m Mat4 representing the original pose for this Bone.
      */
     void setOriPose(const Mat4& m);
+    void setLocalPose(const Mat4& m);
+    void setGlobalTemp(const Mat4& m);
+    void setLocalTemp(const Mat4& m);
 
     /**
      * reset pose to origin
@@ -122,6 +125,8 @@ public:
     void removeChildBone(Bone3D* bone);
     /**remove all child bone*/
     void removeAllChildBone();
+    Mat4& getGlobalTemp();
+    Mat4& getLocalTemp();
 
 protected:
     /**
@@ -170,6 +175,8 @@ protected:
     bool _worldDirty;
     Mat4 _world;
     Mat4 _local;
+    Mat4 _globalTemp;
+    Mat4 _localTemp;
 
     std::vector<BoneBlendState> _blendStates;
 };
@@ -202,6 +209,7 @@ public:
 
     /**refresh bone world matrix*/
     void updateBoneMatrix();
+    void updateBoneAnim();
 
     Skeleton3D();
 

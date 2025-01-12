@@ -52,7 +52,30 @@ Animation3D* Animation3D::create(std::string_view fileName, std::string_view ani
 
     return animation;
 }
+Animation3D* Animation3D::create(Animation3DData data,std::string_view animationName ){
+    std::string fullPath = FileUtils::getInstance()->fullPathForFilename(animationName);
+    fullPath.append("#").append(animationName);
+    auto animation = Animation3DCache::getInstance()->getAnimation(fullPath);
+    if (animation != nullptr)
+        return animation;
 
+    animation = new Animation3D();
+    if (animation->init(data))
+    {
+        animation->autorelease();
+    }
+    else
+    {
+        AX_SAFE_DELETE(animation);
+    }
+
+    return animation;
+}
+bool Animation3D::initWithData(void* data, std::string_view animationName)
+{
+
+    return false;
+}
 bool Animation3D::initWithFile(std::string_view filename, std::string_view animationName)
 {
     std::string fullPath = FileUtils::getInstance()->fullPathForFilename(filename);

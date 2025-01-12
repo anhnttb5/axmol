@@ -419,7 +419,19 @@ private:
     void addSpriteFrameCapInset(SpriteFrame* spritframe, const Rect& capInsets);
 
     void initProgram();
-
+public:
+    unsigned short mFrams;
+    unsigned short pHwidth;
+    unsigned short pHheight;
+    unsigned short pHCenterX;
+    unsigned short pHCenterY;
+    unsigned short pFwidth;
+    unsigned short pFheight;
+    unsigned short pFoffsetX;
+    unsigned short pFoffsetY;
+    unsigned short nInterval;
+    std::string fileName;
+    uint32_t ExchangeColorCount;
 protected:
     /** pixel format of the texture */
     backend::PixelFormat _pixelFormat;

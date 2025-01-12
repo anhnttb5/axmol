@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\CCArmatureDisplay.cpp">
+      <Filter>Source Files\src\DragonBones</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\CCFactory.cpp">
+      <Filter>Source Files\src\DragonBones</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\CCSlot.cpp">
+      <Filter>Source Files\src\DragonBones</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\CCTextureAtlasData.cpp">
+      <Filter>Source Files\src\DragonBones</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\animation\Animation.cpp">
+      <Filter>Source Files\src\DragonBones\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\animation\AnimationState.cpp">
+      <Filter>Source Files\src\DragonBones\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\animation\BaseTimelineState.cpp">
+      <Filter>Source Files\src\DragonBones\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\animation\TimelineState.cpp">
+      <Filter>Source Files\src\DragonBones\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\animation\WorldClock.cpp">
+      <Filter>Source Files\src\DragonBones\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\armature\Armature.cpp">
+      <Filter>Source Files\src\DragonBones\armature</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\armature\Bone.cpp">
+      <Filter>Source Files\src\DragonBones\armature</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\armature\Constraint.cpp">
+      <Filter>Source Files\src\DragonBones\armature</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\armature\DeformVertices.cpp">
+      <Filter>Source Files\src\DragonBones\armature</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\armature\Slot.cpp">
+      <Filter>Source Files\src\DragonBones\armature</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\armature\TransformObject.cpp">
+      <Filter>Source Files\src\DragonBones\armature</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\core\BaseObject.cpp">
+      <Filter>Source Files\src\DragonBones\core</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\core\DragonBones.cpp">
+      <Filter>Source Files\src\DragonBones\core</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\event\EventObject.cpp">
+      <Filter>Source Files\src\DragonBones\event</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\factory\BaseFactory.cpp">
+      <Filter>Source Files\src\DragonBones\factory</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\geom\Point.cpp">
+      <Filter>Source Files\src\DragonBones\geom</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\geom\Transform.cpp">
+      <Filter>Source Files\src\DragonBones\geom</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\model\AnimationConfig.cpp">
+      <Filter>Source Files\src\DragonBones\model</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\model\AnimationData.cpp">
+      <Filter>Source Files\src\DragonBones\model</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\model\ArmatureData.cpp">
+      <Filter>Source Files\src\DragonBones\model</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\model\BoundingBoxData.cpp">
+      <Filter>Source Files\src\DragonBones\model</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\model\CanvasData.cpp">
+      <Filter>Source Files\src\DragonBones\model</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\model\ConstraintData.cpp">
+      <Filter>Source Files\src\DragonBones\model</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\model\DisplayData.cpp">
+      <Filter>Source Files\src\DragonBones\model</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\model\DragonBonesData.cpp">
+      <Filter>Source Files\src\DragonBones\model</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\model\SkinData.cpp">
+      <Filter>Source Files\src\DragonBones\model</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\model\TextureAtlasData.cpp">
+      <Filter>Source Files\src\DragonBones\model</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\model\UserData.cpp">
+      <Filter>Source Files\src\DragonBones\model</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\parser\BinaryDataParser.cpp">
+      <Filter>Source Files\src\DragonBones\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\parser\DataParser.cpp">
+      <Filter>Source Files\src\DragonBones\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\parser\JSONDataParser.cpp">
+      <Filter>Source Files\src\DragonBones\parser</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\CCArmatureDisplay.h">
+      <Filter>Source Files\src\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\CCDragonBonesHeaders.h">
+      <Filter>Source Files\src\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\CCFactory.h">
+      <Filter>Source Files\src\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\CCSlot.h">
+      <Filter>Source Files\src\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\CCTextureAtlasData.h">
+      <Filter>Source Files\src\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\DragonBonesHeaders.h">
+      <Filter>Source Files\src\DragonBones</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\animation\Animation.h">
+      <Filter>Source Files\src\DragonBones\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\animation\AnimationState.h">
+      <Filter>Source Files\src\DragonBones\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\animation\BaseTimelineState.h">
+      <Filter>Source Files\src\DragonBones\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\animation\IAnimatable.h">
+      <Filter>Source Files\src\DragonBones\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\animation\TimelineState.h">
+      <Filter>Source Files\src\DragonBones\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\animation\WorldClock.h">
+      <Filter>Source Files\src\DragonBones\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\armature\Armature.h">
+      <Filter>Source Files\src\DragonBones\armature</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\armature\Bone.h">
+      <Filter>Source Files\src\DragonBones\armature</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\armature\Constraint.h">
+      <Filter>Source Files\src\DragonBones\armature</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\armature\DeformVertices.h">
+      <Filter>Source Files\src\DragonBones\armature</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\armature\IArmatureProxy.h">
+      <Filter>Source Files\src\DragonBones\armature</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\armature\Slot.h">
+      <Filter>Source Files\src\DragonBones\armature</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\armature\TransformObject.h">
+      <Filter>Source Files\src\DragonBones\armature</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\core\BaseObject.h">
+      <Filter>Source Files\src\DragonBones\core</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\core\DragonBones.h">
+      <Filter>Source Files\src\DragonBones\core</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\event\EventObject.h">
+      <Filter>Source Files\src\DragonBones\event</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\event\IEventDispatcher.h">
+      <Filter>Source Files\src\DragonBones\event</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\factory\BaseFactory.h">
+      <Filter>Source Files\src\DragonBones\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\geom\ColorTransform.h">
+      <Filter>Source Files\src\DragonBones\geom</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\geom\Matrix.h">
+      <Filter>Source Files\src\DragonBones\geom</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\geom\Point.h">
+      <Filter>Source Files\src\DragonBones\geom</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\geom\Rectangle.h">
+      <Filter>Source Files\src\DragonBones\geom</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\geom\Transform.h">
+      <Filter>Source Files\src\DragonBones\geom</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\model\AnimationConfig.h">
+      <Filter>Source Files\src\DragonBones\model</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\model\AnimationData.h">
+      <Filter>Source Files\src\DragonBones\model</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\model\ArmatureData.h">
+      <Filter>Source Files\src\DragonBones\model</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\model\BoundingBoxData.h">
+      <Filter>Source Files\src\DragonBones\model</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\model\CanvasData.h">
+      <Filter>Source Files\src\DragonBones\model</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\model\ConstraintData.h">
+      <Filter>Source Files\src\DragonBones\model</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\model\DisplayData.h">
+      <Filter>Source Files\src\DragonBones\model</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\model\DragonBonesData.h">
+      <Filter>Source Files\src\DragonBones\model</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\model\SkinData.h">
+      <Filter>Source Files\src\DragonBones\model</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\model\TextureAtlasData.h">
+      <Filter>Source Files\src\DragonBones\model</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\model\UserData.h">
+      <Filter>Source Files\src\DragonBones\model</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\parser\BinaryDataParser.h">
+      <Filter>Source Files\src\DragonBones\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\parser\DataParser.h">
+      <Filter>Source Files\src\DragonBones\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\DevCocos\axmol\extensions\DragonBones\src\DragonBones\parser\JSONDataParser.h">
+      <Filter>Source Files\src\DragonBones\parser</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\DevCocos\axmol\extensions\DragonBones\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{DE4B1930-799C-3B1F-B3DF-67CAF3A4DEF6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src">
+      <UniqueIdentifier>{EC87ABA1-F808-3C0D-9B88-E9025E2DC3B2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\DragonBones">
+      <UniqueIdentifier>{13F1F987-6FB5-3B2F-A2E9-40ABA1396B77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\DragonBones\animation">
+      <UniqueIdentifier>{E5FA274B-0975-313D-8143-EED695790146}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\DragonBones\armature">
+      <UniqueIdentifier>{83160BA3-8D27-31CE-8308-3D10AE5E0C0D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\DragonBones\core">
+      <UniqueIdentifier>{E7A9475E-C191-32E8-BF63-AFD6D5405ED4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\DragonBones\event">
+      <UniqueIdentifier>{346B05C5-E89D-36CF-B7BD-2EC9758B7544}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\DragonBones\factory">
+      <UniqueIdentifier>{421DE0DF-D79E-33CC-AE41-F358FAA56A93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\DragonBones\geom">
+      <UniqueIdentifier>{AA50142F-71E9-32A8-8503-3A18312431F0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\DragonBones\model">
+      <UniqueIdentifier>{3ACA5A5B-704C-3CF5-941D-5B75A7817761}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src\DragonBones\parser">
+      <UniqueIdentifier>{E092222A-D2E8-3CE5-A404-4FBF119462E9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

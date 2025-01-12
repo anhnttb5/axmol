@@ -698,14 +698,20 @@ int Node::getTag() const
 {
     return _tag;
 }
-
+std::string Node::GetTagByKey()
+{
+    return n_nTagKey;
+}
 /// tag setter
 void Node::setTag(int tag)
 {
     updateParentChildrenIndexer(tag);
     _tag = tag;
 }
-
+void Node::setTagByKey(std::string var)
+{
+    n_nTagKey = var;
+}
 std::string_view Node::getName() const
 {
     return _name;
@@ -808,7 +814,17 @@ void Node::childrenAlloc()
 {
     _children.reserve(4);
 }
+Node* Node::getChildByTagKey(std::string aTag)
+{
+    if (aTag == "")
+        return NULL;
 
+    auto it = childMap.find(aTag);
+    if (it != childMap.end()) {
+        return it->second;
+    }
+    return NULL;
+}
 Node* Node::getChildByTag(int tag) const
 {
     AXASSERT(tag != Node::INVALID_TAG, "Invalid tag");
@@ -827,7 +843,10 @@ Node* Node::getChildByTag(int tag) const
     }
     return nullptr;
 }
-
+std::unordered_map<std::string, Node*>::iterator Node::getChildByTagKeyIt(const std::string& key) {
+    auto it = childMap.find(key);
+    return it;
+}
 Node* Node::getChildByName(std::string_view name) const
 {
     // AXASSERT(!name.empty(), "Invalid name");
@@ -1004,7 +1023,9 @@ void Node::addChildHelper(Node* child, int localZOrder, int tag, std::string_vie
     }
 
     this->insertChild(child, localZOrder);
-
+    n_nTagKey = name;
+    if (!n_nTagKey.empty())
+        childMap[n_nTagKey] = child;
     child->setParent(this);
 
     if (_childFollowCameraMask)
@@ -1104,7 +1125,20 @@ void Node::removeChildByTag(int tag, bool cleanup /* = true */)
         this->removeChild(child, cleanup);
     }
 }
+void Node::removeChildByTagKey(std::string tag)
+{
+    this->removeChildByTagKey(tag, true);
+}
 
+void Node::removeChildByTagKey(std::string tag, bool cleanup)
+{
+    CCAssert(tag != "", "Invalid tag");
+
+    Node *child = this->getChildByTagKey(tag);
+    if (child){
+        this->removeChild(child, cleanup);
+    }
+}
 void Node::removeChildByName(std::string_view name, bool cleanup)
 {
     AXASSERT(!name.empty(), "Invalid name");
@@ -1135,6 +1169,7 @@ void Node::removeAllChildrenWithCleanup(bool cleanup)
     }
 
     _children.clear();
+    childMap.clear();
     AX_SAFE_DELETE(_childrenIndexer);
 }
 
@@ -1176,8 +1211,23 @@ void Node::detachChild(Node* child, ssize_t childIndex, bool cleanup)
 
     resetChild(child, cleanup);
     _children.erase(childIndex);
+    removeNodeFromMap(child);
+}
+void Node::removeNodeFromMap(const Node* nodeToRemove) {
+    for (auto it = childMap.begin(); it != childMap.end(); ++it) {
+        if (it->second == nodeToRemove) {
+            childMap.erase(it);
+            break;  // Nếu bạn muốn xóa chỉ một Node duy nhất, bạn có thể thoát khỏi vòng lặp sau khi xóa.
+        }
+    }
 }
 
+void Node::setTimeDraw(uint32_t _time){
+    _timeDraw = _time;
+}
+uint32_t Node::getTimeDraw(){
+    return _timeDraw;
+}
 // helper used by reorderChild & add
 void Node::insertChild(Node* child, int z)
 {
@@ -1515,6 +1565,7 @@ bool Node::isScheduled(std::string_view key) const
 void Node::scheduleUpdate()
 {
     scheduleUpdateWithPriority(0);
+
 }
 
 void Node::scheduleUpdateWithPriority(int priority)
@@ -2283,3 +2334,4 @@ backend::ProgramState* Node::getProgramState() const
 }
 
 }
+

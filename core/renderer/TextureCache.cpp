@@ -503,7 +503,62 @@ Texture2D* TextureCache::addImage(std::string_view path, PixelFormat format)
 
     return texture;
 }
+//anhnt
+Texture2D*  TextureCache::addImageWihtData_act(const char* fileimage, void * data, int m_nWidth, int m_nHeight, unsigned long dataLength)
+    {
+        CCAssert(fileimage != NULL, "TextureCache: fileimage MUST not be NULL");
 
+        Texture2D * texture = NULL;
+
+        std::string pathKey = fileimage;
+
+        if (pathKey.size() == 0)
+        {
+            return NULL;
+        }
+        if (m_pTextures_act.find(pathKey) != m_pTextures_act.end()) {
+            texture = m_pTextures_act[pathKey];
+        }
+
+        if (!texture) {
+            std::string lowerCase(pathKey);
+            texture = new (std::nothrow) Texture2D();
+            if (texture &&
+                texture->initWithData(data, dataLength,backend::PixelFormat::RGBA8, m_nWidth,
+                                        m_nHeight)) {
+                //texture->generateMipmap();
+                //texture->setTexParameters({GL_LINEAR_MIPMAP_LINEAR, GL_LINEAR, GL_CLAMP_TO_EDGE, GL_CLAMP_TO_EDGE});
+                //CCMessageBox("texture->initWithData suss","title");
+#if CC_ENABLE_CACHE_TEXTURE_DATA
+                // cache the texture file name
+            //VolatileTexture::addDataTexture(texture, data, (CCTexture2DPixelFormat)kTexture2DPixelFormat_RGBA8888, imageSize);// const CCSize& contentSize
+            //VolatileTextureMgr::addDataTexture(texture, data, imageSize.width * imageSize.height * 4, Texture2D::PixelFormat::RGBA8888, imageSize);
+#endif
+                //texture->setAliasTexParameters();
+                m_pTextures_act[pathKey] = texture;
+                //texture->release();
+            } else {
+                AX_SAFE_RELEASE(texture);
+                texture = nullptr;
+                AXLOG("cocos2d: Couldn't create texture for file:%s in CCTextureCache", fileimage);
+            }
+        }
+        return texture;
+    }
+    Texture2D*  TextureCache::isFileExist_act(const char* fileimage) {
+                CCAssert(fileimage != NULL, "TextureCache: fileimage MUST not be NULL");
+        std::string pathKey = fileimage;
+        Texture2D *texture = NULL;
+        if (pathKey.size() == 0) {
+            return NULL;
+        }
+        if (m_pTextures_act.find(fileimage) != m_pTextures_act.end()) {
+            texture = m_pTextures_act[fileimage];
+        }
+        //texture = (Texture2D*)m_pTextures.at(pathKey.c_str());
+
+        return texture;
+    }
 void TextureCache::parseNinePatchImage(ax::Image* image, ax::Texture2D* texture, std::string_view path)
 {
     if (NinePatchImageParser::isNinePatchImage(path))
@@ -528,6 +583,11 @@ Texture2D* TextureCache::addImage(Image* image, std::string_view key, PixelForma
 
     do
     {
+        std::string fileKey = std::string{key};;
+        if (m_pTextures_act.find(fileKey) != m_pTextures_act.end()) {
+            texture = m_pTextures_act[fileKey];
+            return texture;
+        }
         auto it = _textures.find(key);
         if (it != _textures.end())
         {
@@ -539,6 +599,7 @@ Texture2D* TextureCache::addImage(Image* image, std::string_view key, PixelForma
         if (texture->initWithImage(image, format))
         {
             _textures.emplace(key, texture);
+            m_pTextures_act[fileKey] = texture;
         }
         else
         {

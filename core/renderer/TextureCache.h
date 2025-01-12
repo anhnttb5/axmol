@@ -106,6 +106,11 @@ public:
     Texture2D* addImage(std::string_view filepath);
     Texture2D* addImage(std::string_view filepath, PixelFormat format);
 
+    //anhnt them
+    Texture2D* isFileExist_act(const char* fileimage);
+    Texture2D* addImageWihtData_act(const char* fileimage, void * data, int m_nWidth, int m_nHeight, unsigned long dataLength);
+
+
     /** Returns a Texture2D object given a file image.
     * If the file image was not previously loaded, it will create a new Texture2D object and it will return it.
     * Otherwise it will load a texture in a offthread, and when the image is loaded, the callback will be called with
@@ -249,6 +254,8 @@ protected:
     int _asyncRefCount;
 
     hlookup::string_map<Texture2D*> _textures;
+    std::unordered_map<std::string, Texture2D*> m_pTextures;
+    std::unordered_map<std::string, Texture2D*> m_pTextures_act;
 
     static std::string s_etc1AlphaFileSuffix;
 };

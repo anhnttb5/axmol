@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F7FC7333-6F52-3CCF-B33C-F0B4B0B21B4C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="E:\DevCocos\axmol\tests\build\engine\axmol\core\ALL_BUILD.dir\nasm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\DevCocos\axmol\core\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/DevCocos/axmol/core/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/DevCocos/axmol/tests/cpp-tests -BE:/DevCocos/axmol/tests/build --check-stamp-file E:/DevCocos/axmol/tests/build/engine/axmol/core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.28\Templates\MSBuild\nasm.props.in;E:\DevCocos\axmol\core\2d\CMakeLists.txt;E:\DevCocos\axmol\core\3d\CMakeLists.txt;E:\DevCocos\axmol\core\audio\CMakeLists.txt;E:\DevCocos\axmol\core\axmolver.h.in;E:\DevCocos\axmol\core\base\CMakeLists.txt;E:\DevCocos\axmol\core\math\CMakeLists.txt;E:\DevCocos\axmol\core\navmesh\CMakeLists.txt;E:\DevCocos\axmol\core\network\CMakeLists.txt;E:\DevCocos\axmol\core\physics\CMakeLists.txt;E:\DevCocos\axmol\core\physics3d\CMakeLists.txt;E:\DevCocos\axmol\core\platform\CMakeLists.txt;E:\DevCocos\axmol\core\renderer\CMakeLists.txt;E:\DevCocos\axmol\core\renderer\RenderConsts.h.in;E:\DevCocos\axmol\core\ui\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\DevCocos\axmol\tests\build\engine\axmol\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/DevCocos/axmol/core/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/DevCocos/axmol/tests/cpp-tests -BE:/DevCocos/axmol/tests/build --check-stamp-file E:/DevCocos/axmol/tests/build/engine/axmol/core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.28\Templates\MSBuild\nasm.props.in;E:\DevCocos\axmol\core\2d\CMakeLists.txt;E:\DevCocos\axmol\core\3d\CMakeLists.txt;E:\DevCocos\axmol\core\audio\CMakeLists.txt;E:\DevCocos\axmol\core\axmolver.h.in;E:\DevCocos\axmol\core\base\CMakeLists.txt;E:\DevCocos\axmol\core\math\CMakeLists.txt;E:\DevCocos\axmol\core\navmesh\CMakeLists.txt;E:\DevCocos\axmol\core\network\CMakeLists.txt;E:\DevCocos\axmol\core\physics\CMakeLists.txt;E:\DevCocos\axmol\core\physics3d\CMakeLists.txt;E:\DevCocos\axmol\core\platform\CMakeLists.txt;E:\DevCocos\axmol\core\renderer\CMakeLists.txt;E:\DevCocos\axmol\core\renderer\RenderConsts.h.in;E:\DevCocos\axmol\core\ui\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\DevCocos\axmol\tests\build\engine\axmol\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/DevCocos/axmol/core/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/DevCocos/axmol/tests/cpp-tests -BE:/DevCocos/axmol/tests/build --check-stamp-file E:/DevCocos/axmol/tests/build/engine/axmol/core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.28\Templates\MSBuild\nasm.props.in;E:\DevCocos\axmol\core\2d\CMakeLists.txt;E:\DevCocos\axmol\core\3d\CMakeLists.txt;E:\DevCocos\axmol\core\audio\CMakeLists.txt;E:\DevCocos\axmol\core\axmolver.h.in;E:\DevCocos\axmol\core\base\CMakeLists.txt;E:\DevCocos\axmol\core\math\CMakeLists.txt;E:\DevCocos\axmol\core\navmesh\CMakeLists.txt;E:\DevCocos\axmol\core\network\CMakeLists.txt;E:\DevCocos\axmol\core\physics\CMakeLists.txt;E:\DevCocos\axmol\core\physics3d\CMakeLists.txt;E:\DevCocos\axmol\core\platform\CMakeLists.txt;E:\DevCocos\axmol\core\renderer\CMakeLists.txt;E:\DevCocos\axmol\core\renderer\RenderConsts.h.in;E:\DevCocos\axmol\core\ui\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\DevCocos\axmol\tests\build\engine\axmol\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/DevCocos/axmol/core/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/DevCocos/axmol/tests/cpp-tests -BE:/DevCocos/axmol/tests/build --check-stamp-file E:/DevCocos/axmol/tests/build/engine/axmol/core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.28\Templates\MSBuild\nasm.props.in;E:\DevCocos\axmol\core\2d\CMakeLists.txt;E:\DevCocos\axmol\core\3d\CMakeLists.txt;E:\DevCocos\axmol\core\audio\CMakeLists.txt;E:\DevCocos\axmol\core\axmolver.h.in;E:\DevCocos\axmol\core\base\CMakeLists.txt;E:\DevCocos\axmol\core\math\CMakeLists.txt;E:\DevCocos\axmol\core\navmesh\CMakeLists.txt;E:\DevCocos\axmol\core\network\CMakeLists.txt;E:\DevCocos\axmol\core\physics\CMakeLists.txt;E:\DevCocos\axmol\core\physics3d\CMakeLists.txt;E:\DevCocos\axmol\core\platform\CMakeLists.txt;E:\DevCocos\axmol\core\renderer\CMakeLists.txt;E:\DevCocos\axmol\core\renderer\RenderConsts.h.in;E:\DevCocos\axmol\core\ui\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\DevCocos\axmol\tests\build\engine\axmol\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\ZERO_CHECK.vcxproj">
+      <Project>{0E4BF591-2592-3815-8B95-2B5A81466F33}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\engine\3rdparty\ConvertUTF\ConvertUTF.vcxproj">
+      <Project>{43A651FB-2E7F-3304-94C5-2C2861539B5E}</Project>
+      <Name>ConvertUTF</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\engine\extensions\DragonBones\DragonBones.vcxproj">
+      <Project>{A31D79B5-8B79-369C-B606-6E0112C19F1A}</Project>
+      <Name>DragonBones</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\engine\extensions\GUI\GUI.vcxproj">
+      <Project>{42DF3B13-0799-34A4-A8B7-1706DCF7BBDF}</Project>
+      <Name>GUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\engine\extensions\ImGui\ImGui.vcxproj">
+      <Project>{CC6D37BC-CBB8-3A65-B7FC-B7EEE71FBFF4}</Project>
+      <Name>ImGui</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\engine\extensions\Inspector\Inspector.vcxproj">
+      <Project>{A4A43CB9-D9FD-3D90-AD81-4C9C9A943D95}</Project>
+      <Name>Inspector</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\engine\extensions\JSONDefault\JSONDefault.vcxproj">
+      <Project>{BB714870-76A8-3A34-A7E1-9A1B6C2F14BE}</Project>
+      <Name>JSONDefault</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\engine\extensions\SDFGen\SDFGen.vcxproj">
+      <Project>{6039AFA7-40AB-3797-A9F7-84BFB1B0154E}</Project>
+      <Name>SDFGen</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\engine\extensions\assets-manager\assets-manager.vcxproj">
+      <Project>{7F0A8994-4F49-3850-8FA3-9EF49A5EB868}</Project>
+      <Name>assets-manager</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\engine\3rdparty\astcenc\astcenc.vcxproj">
+      <Project>{33C1FF07-E6C2-3E89-A383-090F0E2EF0CC}</Project>
+      <Name>astcenc</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\engine\extensions\scripting\lua-bindings\axlua.vcxproj">
+      <Project>{51F6901B-4CCE-304D-8237-6BBEC3FC550A}</Project>
+      <Name>axlua</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\engine\axmol\core\axmol.vcxproj">
+      <Project>{7CA6C6BB-5C48-3BAE-93C7-32372CD7E6D9}</Project>
+      <Name>axmol</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\engine\3rdparty\box2d\box2d.vcxproj">
+      <Project>{527F02AE-AB5B-3EC2-A31B-147D7EB93604}</Project>
+      <Name>box2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\engine\3rdparty\bullet\bullet.vcxproj">
+      <Project>{39BA1D21-3593-35DF-B1DD-38F492016959}</Project>
+      <Name>bullet</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\engine\3rdparty\chipmunk\src\chipmunk.vcxproj">
+      <Project>{0E94A2DC-53F7-39D9-9237-CACA7A495C1B}</Project>
+      <Name>chipmunk</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\engine\3rdparty\clipper2\clipper2.vcxproj">
+      <Project>{39083307-0BB4-3B34-9FDD-B834F52EB66A}</Project>
+      <Name>clipper2</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\engine\extensions\cocostudio\cocostudio.vcxproj">
+      <Project>{2BA993C2-1A10-31E9-9E29-64E42C834D0F}</Project>
+      <Name>cocostudio</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\engine\3rdparty\doctest\doctest.vcxproj">
+      <Project>{6A448EEF-CF4D-3B89-A4B8-2A97A5716148}</Project>
+      <Name>doctest</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\engine\extensions\fairygui\fairygui.vcxproj">
+      <Project>{A17E6D8D-095A-3F97-A564-E9ED3BF79A3F}</Project>
+      <Name>fairygui</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\engine\3rdparty\fastlz\fastlz.vcxproj">
+      <Project>{0EBBE1C6-8F70-3D31-85D4-B6EEBA636D03}</Project>
+      <Name>fastlz</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\engine\3rdparty\fmt\fmt.vcxproj">
+      <Project>{E47DBE7D-09F0-3739-A539-123C3C0ED624}</Project>
+      <Name>fmt</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\engine\3rdparty\freetype\freetype.vcxproj">
+      <Project>{E3A984AC-04A1-3FE1-BF39-2B680657EE6C}</Project>
+      <Name>freetype</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\engine\3rdparty\glad\glad.vcxproj">
+      <Project>{269179D5-637F-3D58-8A71-DD2B570FC456}</Project>
+      <Name>glad</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\engine\3rdparty\glfw\src\glfw.vcxproj">
+      <Project>{166F7A87-5DED-3BC4-ACC3-90A4A161CB84}</Project>
+      <Name>glfw</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\engine\3rdparty\llhttp\llhttp.vcxproj">
+      <Project>{F73F4FCA-751C-3E02-978C-27D512118AA4}</Project>
+      <Name>llhttp</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\engine\3rdparty\lua\plainlua\lua.vcxproj">
+      <Project>{D60D6D8B-9FF9-37C6-BFBD-97C5FD9E1F4A}</Project>
+      <Name>lua</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\engine\3rdparty\lua\lua-cjson\lua-cjson.vcxproj">
+      <Project>{625D938D-1179-3230-AD5E-C5D9A1DF61BD}</Project>
+      <Name>lua-cjson</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\engine\3rdparty\lua\plainlua\luac.vcxproj">
+      <Project>{AB346287-3206-3687-8259-69836E8E442F}</Project>
+      <Name>luac</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\engine\3rdparty\ogg\ogg.vcxproj">
+      <Project>{7FD17547-4359-361D-8FEA-9EA54073DFAE}</Project>
+      <Name>ogg</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\engine\extensions\Particle3D\particle3d.vcxproj">
+      <Project>{9C3AC6BE-75B7-3354-8CF3-28C59605B7CB}</Project>
+      <Name>particle3d</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\engine\extensions\physics-nodes\physics-nodes.vcxproj">
+      <Project>{8A19A163-ABC4-367D-877F-37EF006565DD}</Project>
+      <Name>physics-nodes</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\engine\3rdparty\lua\plainlua\plainlua.vcxproj">
+      <Project>{62EACEAA-8502-30F0-BB8B-95933CEA2482}</Project>
+      <Name>plainlua</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\engine\3rdparty\png\png.vcxproj">
+      <Project>{29BA375D-BA01-3DDB-A5C4-E51DE6083201}</Project>
+      <Name>png</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\engine\3rdparty\poly2tri\poly2tri.vcxproj">
+      <Project>{E430E6C5-A610-30D5-85C5-00362D858995}</Project>
+      <Name>poly2tri</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\engine\3rdparty\pugixml\pugixml.vcxproj">
+      <Project>{E8CF57D9-B370-3418-8D19-276B7CC69265}</Project>
+      <Name>pugixml</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\engine\3rdparty\recast\recast.vcxproj">
+      <Project>{391C14C0-7D1F-35AF-BAE6-865598F35453}</Project>
+      <Name>recast</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\engine\3rdparty\simdjson\simdjson.vcxproj">
+      <Project>{09874336-3156-3EA3-B768-AEF4F1FBA406}</Project>
+      <Name>simdjson</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\engine\extensions\spine\spine.vcxproj">
+      <Project>{52E418A3-6448-32B6-90F9-20ADEF561FC7}</Project>
+      <Name>spine</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\engine\3rdparty\lua\tolua\tolua.vcxproj">
+      <Project>{FC977AA0-6BC9-33B2-969B-C6A0FE1AF89B}</Project>
+      <Name>tolua</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\engine\3rdparty\unzip\unzip.vcxproj">
+      <Project>{FF32873E-9E60-37D0-ADDE-815907A6433B}</Project>
+      <Name>unzip</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\engine\3rdparty\webp\webp.vcxproj">
+      <Project>{288AE6FB-BBF0-3D6D-956C-238C63F8CD9C}</Project>
+      <Name>webp</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\engine\3rdparty\websocket-parser\websocket-parser.vcxproj">
+      <Project>{B36F694E-4AD5-370E-A893-9A5F3D3A7A8A}</Project>
+      <Name>websocket-parser</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\engine\3rdparty\xxhash\xxhash.vcxproj">
+      <Project>{2A49ABE7-0221-313A-B43F-AF9CA5A173AE}</Project>
+      <Name>xxhash</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\DevCocos\axmol\tests\build\engine\3rdparty\yasio\yasio.vcxproj">
+      <Project>{7786EC0F-C654-3999-AC19-11BBC2C6704C}</Project>
+      <Name>yasio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="C:\Program Files\CMake\share\cmake-3.28\Templates\MSBuild\nasm.targets" />
+  </ImportGroup>
+</Project>

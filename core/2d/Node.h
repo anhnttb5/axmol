@@ -774,7 +774,8 @@ public:
      * Please use `getChildByName()` instead.
      */
     virtual Node* getChildByTag(int tag) const;
-
+    virtual Node * getChildByTagKey(std::string tag);
+    virtual std::unordered_map<std::string, Node*>::iterator getChildByTagKeyIt(const std::string& key);
     /**
      * Gets a child from the container with its tag that can be cast to Type T.
      *
@@ -903,6 +904,10 @@ public:
      * Please use `removeChildByName` instead.
      */
     virtual void removeChildByTag(int tag, bool cleanup = true);
+    virtual void removeChildByTagKey(std::string tag);
+
+    virtual void removeChildByTagKey(std::string tag, bool cleanup);
+
     /**
      * Removes a child from the container by tag value. It will also cleanup all running actions depending on the
      * cleanup parameter.
@@ -974,6 +979,7 @@ public:
      * Please use `getTag()` instead.
      */
     virtual int getTag() const;
+    virtual std::string GetTagByKey();
     /**
      * Changes the tag that is used to identify the node easily.
      *
@@ -984,6 +990,7 @@ public:
      * Please use `setName()` instead.
      */
     virtual void setTag(int tag);
+    virtual void setTagByKey(std::string nTag);
 
     /** Returns a string that is used to identify the node.
      * @return A string that identifies the node.
@@ -1862,11 +1869,13 @@ public:
 
     // Compatible old Layer::create
     bool initLayer();
+    void setTimeDraw(uint32_t _time);
+    uint32_t getTimeDraw();
 
 protected:
     /// lazy allocs
     void childrenAlloc();
-
+    void removeNodeFromMap(const Node* nodeToRemove);
     /// helper that reorder a child
     void insertChild(Node* child, int z);
 
@@ -1962,15 +1971,16 @@ protected:
     float _globalZOrder;  ///< Global order used to sort the node
 
     static std::uint32_t s_globalOrderOfArrival;
-
+    std::unordered_map<std::string, Node*> childMap;
     Vector<Node*> _children;             ///< array of children nodes
     NodeIndexerMap_t* _childrenIndexer;  ///< The children indexer for fast find child
     Node* _parent;                       ///< weak reference to parent node
     Director* _director;                 // cached director pointer to improve rendering performance
     int _tag;                            ///< a tag. Can be any number you assigned just to identify this node
-
+    std::string n_nTagKey;
     std::string _name;     ///< a string label, an user defined string to identify this node
     uint64_t _hashOfName;  ///< hash value of _name, used for speed in getChildByName
+    uint32_t _timeDraw;  ///< hash value of _name, used for speed in getChildByName
 
     void* _userData;   ///< A user assigned void pointer, Can be point to any cpp object
     Object* _userObject;  ///< A user assigned Object

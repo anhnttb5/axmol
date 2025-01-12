@@ -42,10 +42,27 @@ const Mat4& Bone3D::getInverseBindPose()
 {
     return _invBindPose;
 }
+Mat4& Bone3D::getGlobalTemp()
+{
+    return _globalTemp;
+}
+Mat4& Bone3D::getLocalTemp()
+{
+    return _localTemp;
+}
 
 void Bone3D::setOriPose(const Mat4& m)
 {
     _oriPose = m;
+}
+void Bone3D::setLocalPose(const Mat4& m){
+    _local = m;
+}
+void Bone3D::setGlobalTemp(const Mat4& m){
+    _globalTemp = m;
+}
+void Bone3D::setLocalTemp(const Mat4& m){
+    _localTemp = m;
 }
 
 void Bone3D::resetPose()
@@ -322,7 +339,17 @@ void Skeleton3D::updateBoneMatrix()
         it->updateWorldMat();
     }
 }
-
+void Skeleton3D::updateBoneAnim()
+{
+    for (const auto& it : _rootBones)
+    {
+        it->setLocalPose(it->getLocalTemp());
+    }
+    for (const auto& it : _bones)
+    {
+        it->setLocalPose(it->getLocalTemp());
+    }
+}
 void Skeleton3D::removeAllBones()
 {
     _bones.clear();

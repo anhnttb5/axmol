@@ -71,6 +71,7 @@ public:
 
     /**read all animation or only the animation with given animationName? animationName == "" read the first.*/
     static Animation3D* create(std::string_view filename, std::string_view animationName = "");
+    static Animation3D* create(Animation3DData data,std::string_view animationName = "");
 
     /**get duration*/
     float getDuration() const { return _duration; }
@@ -92,7 +93,7 @@ public:
 
     /**init Animation3D with file name and animation name*/
     bool initWithFile(std::string_view filename, std::string_view animationName);
-
+    bool initWithData(void* data, std::string_view animationName);
 protected:
     hlookup::string_map<Curve*> _boneCurves;  // bone curves map, key bone name, value AnimationCurve
 
